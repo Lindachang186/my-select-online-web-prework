@@ -3,6 +3,7 @@ def my_select(collection)
   new = []
   while collection.size > i
   collection.select do |item|
+    item == item
     yield collection[i] << new
     i += 1
   end
