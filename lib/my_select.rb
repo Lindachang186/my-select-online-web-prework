@@ -4,6 +4,7 @@ def my_select(collection)
   while collection.size > i
   collection.select do |item|
     item.even?
+  end
     yield collection[i] << new
     i += 1
   end
